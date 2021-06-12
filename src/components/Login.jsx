@@ -1,4 +1,4 @@
-import { GoogleOutlined } from "@ant-design/icons";
+import { GoogleOutlined, GithubOutlined } from "@ant-design/icons";
 import firebase from "firebase/app";
 import "firebase/app";
 
@@ -16,6 +16,15 @@ const Login = () => {
           }
         >
           <GoogleOutlined /> Sign in with Google
+        </div>
+        <br /> <br />
+        <div
+          className='login-button github'
+          onClick={() =>
+            auth.signInWithRedirect(new firebase.auth.GithubAuthProvider())
+          }
+        >
+          <GithubOutlined /> Sign in with GitHub
         </div>
       </div>
     </div>
