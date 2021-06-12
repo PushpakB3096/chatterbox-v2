@@ -39,6 +39,7 @@ const Chats = () => {
         // if the ChatEngine profile doesn't exist, create a new one
         let newUser = new FormData();
         newUser.append("email", user.email);
+        // username is email because we want the username to be unique
         newUser.append("username", user.email);
         newUser.append("secret", user.uid);
 
