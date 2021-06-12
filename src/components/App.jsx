@@ -1,9 +1,24 @@
-import Login from "./Login";
+import React, { Suspense } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import { AuthProvider } from "../contexts/AuthContext";
+
+// lazy loading of routes
+const Login = React.lazy(() => import("./Login"));
 
 function App() {
   return (
-    <div>
-      <Login />
+    <div style={{ fontFamily: "Avenir" }}>
+      <Router>
+        {/* <AuthProvider> */}
+        <Switch>
+          {/* TODO: Add proper loading page... */}
+          <Suspense fallback={<div>Loading...</div>}>
+            <Route path='/' component={Login} />
+          </Suspense>
+        </Switch>
+        {/* </AuthProvider> */}
+      </Router>
     </div>
   );
 }
