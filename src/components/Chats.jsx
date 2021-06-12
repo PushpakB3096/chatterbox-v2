@@ -20,7 +20,7 @@ const Chats = () => {
     }
     // below code is for when the user is logged in
     const ME_URL = "https://api.chatengine.io/users/me";
-    const POST_URL = "https://api.chatengine.io/users";
+    const POST_URL = "https://api.chatengine.io/users/";
 
     // checks if the user is present and loggedin on ChatEngine
     axios
@@ -43,7 +43,7 @@ const Chats = () => {
         newUser.append("secret", user.uid);
 
         // get and set the profile pic of the user
-        getFile(user.photoUrl).then(avatar => {
+        getFile(user.photoURL).then(avatar => {
           newUser.append("avatar", avatar, avatar.name);
         });
 
@@ -95,10 +95,9 @@ const Chats = () => {
       {/* TODO: move inline style to css */}
       <ChatEngine
         height='calc(100vh - 66px)'
-        projectId={process.env.REACT_APP_CHAT_ENGINE_PROJECT_ID}
-        // TODO: add username and secret
-        userName='.'
-        userSecret='.'
+        projectID={process.env.REACT_APP_CHAT_ENGINE_PROJECT_ID}
+        userName={user && user.email}
+        userSecret={user && user.uid}
       />
     </div>
   );
