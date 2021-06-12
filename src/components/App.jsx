@@ -1,10 +1,10 @@
-import React, { Suspense } from "react";
+import { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { AuthProvider } from "../contexts/AuthContext";
 
 // lazy loading of routes
-const Login = React.lazy(() => import("./Login"));
+const Login = lazy(() => import("./Login"));
 
 function App() {
   return (
