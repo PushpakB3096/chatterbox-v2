@@ -1,3 +1,5 @@
+import { GoogleOutline, FacebookOutlined } from "@ant-design/icons";
+
 const Login = () => {
   return (
     <div id='login-page'>
