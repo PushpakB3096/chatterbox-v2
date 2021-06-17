@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# ChatterBox
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+ChatterBox is a real-time chat application that is made with the help of a real-time, socket-based API called ChatEngine. Features include
 
-In the project directory, you can run:
+- user roles
+- creating new chat rooms
+- login using Google and Github
+- read receipts
+- indication to know that the user is typing
+- sending images
+- inviting other users to join the chat and many more.
 
-### `yarn start`
+## Technology Stack & Concepts
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- ReactJS
+- ChatEngine API
+- Firebase
+- Context API
+- Lazy loading
+- Local Storage to persist user after page refresh
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Run This App Locally
 
-### `yarn test`
+Run the below command to install the dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+npm install
+```
 
-### `yarn build`
+Run the below command to start the app
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You need to include the following variables in your environment to run this application locally. For just using this application, you do not require this.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Key                              | Obtained from |
+| -------------------------------- | ------------- |
+| REACT_APP_API_KEY                | Firebase      |
+| REACT_APP_AUTH_DOMAIN            | Firebase      |
+| REACT_APP_PROJECT_ID             | Firebase      |
+| REACT_APP_STORAGE_BUCKET         | Firebase      |
+| REACT_APP_MESSAGING_SENDER_ID    | Firebase      |
+| REACT_APP_APP_ID                 | Firebase      |
+| REACT_APP_CHAT_ENGINE_PROJECT_ID | ChatEngine    |
+| REACT_APP_CHAT_ENGINE_SECRET     | ChatEngine    |
