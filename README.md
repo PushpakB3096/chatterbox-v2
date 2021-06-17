@@ -1,5 +1,8 @@
 # ChatterBox
 
+![Screenshot from 2021-06-17 11-01-37](https://user-images.githubusercontent.com/44138832/122337188-9e50c880-cf5b-11eb-9538-d662932387ef.png)
+![Screenshot from 2021-06-17 11-02-33](https://user-images.githubusercontent.com/44138832/122337204-a1e44f80-cf5b-11eb-8f11-ea15e2c46aea.png)
+
 ## Introduction
 
 ChatterBox is a real-time chat application that is made with the help of a real-time, socket-based API called ChatEngine. Features include
