@@ -22,7 +22,6 @@ ChatterBox is a real-time chat application that is made with the help of a real-
 - Firebase
 - Context API
 - Lazy loading
-- Local Storage to persist user after page refresh
 
 ## Run This App Locally
 
